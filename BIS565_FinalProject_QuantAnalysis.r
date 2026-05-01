@@ -1,4 +1,4 @@
-library(jsonlite)
+politicallibrary(jsonlite)
 library(tidyverse)
 library(ranger)
 library(vip)
@@ -86,8 +86,7 @@ print(df %>% group_by(race) %>%
 ## Two reference rates are reported for methodological transparency:
 ## (1) White HTN prevalence (0.186) - primary equity reference; White chosen because they
 ##     experience the least structural disadvantage, making their rate an upper-bound target
-## (2) Population mean HTN prevalence - alternative reference that is less politically
-##     loaded and does not assume White outcomes as the aspirational standard
+## (2) Population mean HTN prevalence - alternative reference that does not assume White outcomes as the aspirational standard
 ## The sensitivity analysis (charts 4-5) uses White-rate equalization only for consistency.
 pop_mean_htn <- mean(df$chronic_htn)
 print(paste("White HTN prevalence (primary equity reference): 0.186"))
